@@ -1,0 +1,12 @@
+name = "tgunban-lite"
+main = "_worker.js"
+compatibility_date = "2026-11-25"
+keep_vars = true
+
+# D1 数据库（唯一存储后端，必须绑定；表结构由代码首次运行时自动建立）
+# 先创建：wrangler d1 create tgunban-lite
+# 再把返回的 database_id 填到下面，database_id 只是占位符，部署前必须替换。
+[[d1_databases]]
+binding = "DB"
+database_name = "tgunban-lite"
+database_id = "00000000-0000-0000-0000-000000000000"
